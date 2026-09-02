@@ -1,0 +1,31 @@
+[game]
+name = "CrashWarped"
+id = "SCUS-94244"
+exe = "input/SCUS_942.44"
+disc = "disc/Crash Bandicoot - Warped (USA).cue"
+load_address = "0x80010000"
+entry_pc = "0x800489F8"
+text_size = "0x00051000"
+stack_base = "0x801FFFF0"
+
+[recompiler]
+seeds = "seeds/functions.txt"
+strict = true
+out_dir = "generated"
+
+[runtime]
+window_title = "Crash Warped Recompiled"
+bios_hle = false
+openbios = true
+overlay_cache = true
+
+[video]
+renderer = "software"
+
+[prepare_disc]
+track_01_sha1 = "ae57f60f577c610476c7b8885bd76a6bea20d9de"
+track_01_md5 = "a66777800f028b8443d8a5e278ba69bd"
+track_01_size = 285130608
+
+[netplay]
+require_cue = true
